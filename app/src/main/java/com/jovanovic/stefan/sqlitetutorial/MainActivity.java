@@ -35,11 +35,6 @@ public class MainActivity extends AppCompatActivity {
         Intent i = getIntent();
         P = i.getIntExtra("score",1);
 
-        if(P==1){
-
-        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-        startActivity(intent);}
-
         recyclerView = findViewById(R.id.recyclerView);
         add_button = findViewById(R.id.add_button);
         empty_imageview = findViewById(R.id.empty_imageview);

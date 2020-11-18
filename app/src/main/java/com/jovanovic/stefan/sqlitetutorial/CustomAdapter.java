@@ -94,7 +94,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                         intent.putExtra("type", String.valueOf(movie_type.get(position)));
                         intent.putExtra("runtime", String.valueOf(movie_runtime.get(position)));
                         intent.putExtra("plot", String.valueOf(movie_plot.get(position)));
-                        intent.putExtra("N", N);
+
                         activity.startActivityForResult(intent, 2);
                     }
                 });
@@ -110,6 +110,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                         intent.putExtra("type", String.valueOf(movie_type.get(position)));
                         intent.putExtra("runtime", String.valueOf(movie_runtime.get(position)));
                         intent.putExtra("plot", String.valueOf(movie_plot.get(position)));
+                        intent.putExtra("N", N);
                         activity.startActivityForResult(intent, 99);
                     }
                 });

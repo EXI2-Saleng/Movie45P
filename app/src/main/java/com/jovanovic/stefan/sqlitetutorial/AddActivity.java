@@ -56,8 +56,17 @@ public class AddActivity extends AppCompatActivity {
                 myDB.addBook(name_input.getText().toString().trim(),
                         TypeString.trim(),
                         Integer.valueOf(runtime_input.getText().toString().trim()), plot_input.getText().toString().trim());
+                int  P=99;
+
                 Intent intent = new Intent(AddActivity.this, MainActivity.class);
+                intent.putExtra("score",P);
                 startActivity(intent);
+
+
+
+
+
+
             }
         });
     }
